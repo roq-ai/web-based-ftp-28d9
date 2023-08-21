@@ -1,0 +1,2722 @@
+[
+  {
+    "ftp_server": [
+      {
+        "id": "b19cf404-2f5d-438f-ac8d-dccd8c03b224",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 64900,
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-20T17:38:43.761Z",
+        "updated_at": "2023-08-21T03:01:09.287Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "5c33ea6c-9d90-4818-bed6-48364ff56388",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 69442,
+        "username": "user1",
+        "password": "password123",
+        "created_at": "2023-08-21T08:34:48.608Z",
+        "updated_at": "2023-08-20T11:51:32.138Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "59a8bb83-0fe7-406d-bcdc-656634167f27",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 91407,
+        "username": "ftpadmin",
+        "password": "ftp123",
+        "created_at": "2023-08-21T08:30:15.866Z",
+        "updated_at": "2023-08-20T14:01:47.119Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "8953b6ba-a456-423b-97b0-699f6f40a5d7",
+        "name": "FTP Server 4",
+        "ip_address": "192.168.1.1",
+        "port": 70067,
+        "username": "ftpuser",
+        "password": "admin123",
+        "created_at": "2023-08-20T18:01:39.506Z",
+        "updated_at": "2023-08-20T22:59:49.230Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "e6f2c2f1-4271-4f97-a7cc-9482e8003da1",
+        "name": "FTP Server 5",
+        "ip_address": "10.0.1.1",
+        "port": 80674,
+        "username": "ftpadmin1",
+        "password": "user123",
+        "created_at": "2023-08-21T03:35:13.929Z",
+        "updated_at": "2023-08-21T06:19:06.428Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "73db461a-4f22-4641-ae8d-be41cdffa21c",
+        "username": "user1",
+        "password": "password1",
+        "rights": "read",
+        "folder_path": "/home/user1",
+        "active": true,
+        "created_at": "2023-08-20T20:25:19.282Z",
+        "updated_at": "2023-08-20T23:22:56.605Z",
+        "ftp_server_id": "8953b6ba-a456-423b-97b0-699f6f40a5d7"
+      },
+      {
+        "id": "a73c011a-8493-46f1-b2cf-ac4336f96844",
+        "username": "user2",
+        "password": "password2",
+        "rights": "write",
+        "folder_path": "/var/www/html",
+        "active": false,
+        "created_at": "2023-08-20T11:22:19.533Z",
+        "updated_at": "2023-08-21T10:19:11.483Z",
+        "ftp_server_id": "5c33ea6c-9d90-4818-bed6-48364ff56388"
+      },
+      {
+        "id": "b105b3f3-523a-4a67-8cf7-eb29057b53dc",
+        "username": "user3",
+        "password": "password3",
+        "rights": "read/write",
+        "folder_path": "/data/uploads",
+        "active": true,
+        "created_at": "2023-08-20T14:19:58.076Z",
+        "updated_at": "2023-08-21T05:34:36.471Z",
+        "ftp_server_id": "e6f2c2f1-4271-4f97-a7cc-9482e8003da1"
+      },
+      {
+        "id": "1c2c0070-6e5c-4dee-8d29-da426014b6ea",
+        "username": "user4",
+        "password": "password4",
+        "rights": "admin",
+        "folder_path": "/home/user2",
+        "active": false,
+        "created_at": "2023-08-21T00:59:58.515Z",
+        "updated_at": "2023-08-20T10:48:56.395Z",
+        "ftp_server_id": "8953b6ba-a456-423b-97b0-699f6f40a5d7"
+      },
+      {
+        "id": "ccf94463-c813-44ed-8340-972795ef8c09",
+        "username": "user5",
+        "password": "password5",
+        "rights": "limited",
+        "folder_path": "/var/log",
+        "active": true,
+        "created_at": "2023-08-21T02:24:05.312Z",
+        "updated_at": "2023-08-20T12:15:08.549Z",
+        "ftp_server_id": "8953b6ba-a456-423b-97b0-699f6f40a5d7"
+      }
+    ],
+    "guest": [
+      {
+        "id": "e01d47c7-6898-4167-b5e5-e5e7b84752b1",
+        "first_name": "Alice",
+        "last_name": "Anderson",
+        "email": "alice@example.com",
+        "phone": "123-456-7890",
+        "address": "123 Main Street",
+        "created_at": "2023-08-21T06:31:36.281Z",
+        "updated_at": "2023-08-21T09:37:01.574Z",
+        "ftp_user_id": "73db461a-4f22-4641-ae8d-be41cdffa21c"
+      },
+      {
+        "id": "57314400-b80f-4eb5-9aed-6a944ac6cbe3",
+        "first_name": "Bob",
+        "last_name": "Brown",
+        "email": "bob@example.com",
+        "phone": "987-654-3210",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-08-20T12:12:55.872Z",
+        "updated_at": "2023-08-20T13:01:41.877Z",
+        "ftp_user_id": "73db461a-4f22-4641-ae8d-be41cdffa21c"
+      },
+      {
+        "id": "99b9206f-3b19-4cc9-ae17-d13dd67ac263",
+        "first_name": "Charlie",
+        "last_name": "Clark",
+        "email": "charlie@example.com",
+        "phone": "555-123-4567",
+        "address": "789 Oak Drive",
+        "created_at": "2023-08-21T09:15:38.922Z",
+        "updated_at": "2023-08-20T15:42:08.885Z",
+        "ftp_user_id": "a73c011a-8493-46f1-b2cf-ac4336f96844"
+      },
+      {
+        "id": "901c62df-2570-4185-8165-57f8f2850ef2",
+        "first_name": "Diana",
+        "last_name": "Davis",
+        "email": "diana@example.com",
+        "phone": "888-555-1234",
+        "address": "321 Pine Lane",
+        "created_at": "2023-08-21T05:38:54.464Z",
+        "updated_at": "2023-08-21T01:58:51.201Z",
+        "ftp_user_id": "1c2c0070-6e5c-4dee-8d29-da426014b6ea"
+      },
+      {
+        "id": "48e3b5d2-0d2c-493e-b9ae-46c1895eb3de",
+        "first_name": "Eve",
+        "last_name": "Evans",
+        "email": "eve@example.com",
+        "phone": "999-888-7777",
+        "address": "654 Maple Road",
+        "created_at": "2023-08-21T08:18:07.544Z",
+        "updated_at": "2023-08-20T19:24:07.091Z",
+        "ftp_user_id": "73db461a-4f22-4641-ae8d-be41cdffa21c"
+      }
+    ],
+    "folder": [
+      {
+        "id": "c49abb68-252d-43bc-8892-86a93277a574",
+        "name": "Folder 1",
+        "path": "/home/user1/folder1",
+        "size": 76391,
+        "last_modified": "2023-08-20T14:04:43.400Z",
+        "created_at": "2023-08-21T04:52:21.799Z",
+        "updated_at": "2023-08-20T22:01:44.942Z",
+        "ftp_user_id": "b105b3f3-523a-4a67-8cf7-eb29057b53dc"
+      },
+      {
+        "id": "8eabf93c-2a6f-484b-bd6c-5932c8a10778",
+        "name": "Folder 2",
+        "path": "/var/www/html/folder2",
+        "size": 24747,
+        "last_modified": "2023-08-20T16:51:54.486Z",
+        "created_at": "2023-08-20T21:57:00.186Z",
+        "updated_at": "2023-08-21T09:38:52.071Z",
+        "ftp_user_id": "ccf94463-c813-44ed-8340-972795ef8c09"
+      },
+      {
+        "id": "1519eb98-3028-41f3-abb1-bd3af18ad00f",
+        "name": "Folder 3",
+        "path": "/data/uploads/folder3",
+        "size": 98910,
+        "last_modified": "2023-08-20T14:23:45.193Z",
+        "created_at": "2023-08-20T11:00:27.390Z",
+        "updated_at": "2023-08-20T19:59:19.652Z",
+        "ftp_user_id": "ccf94463-c813-44ed-8340-972795ef8c09"
+      },
+      {
+        "id": "2661a3b5-9c9e-4657-aab6-c688882f24d8",
+        "name": "Folder 4",
+        "path": "/home/user2/folder4",
+        "size": 31682,
+        "last_modified": "2023-08-20T15:30:50.468Z",
+        "created_at": "2023-08-21T02:29:21.320Z",
+        "updated_at": "2023-08-21T09:41:31.201Z",
+        "ftp_user_id": "a73c011a-8493-46f1-b2cf-ac4336f96844"
+      },
+      {
+        "id": "16978ff0-6531-438c-8f80-3ebcc323c68f",
+        "name": "Folder 5",
+        "path": "/var/log/folder5",
+        "size": 99569,
+        "last_modified": "2023-08-21T08:14:04.347Z",
+        "created_at": "2023-08-20T20:33:04.059Z",
+        "updated_at": "2023-08-20T22:27:19.739Z",
+        "ftp_user_id": "ccf94463-c813-44ed-8340-972795ef8c09"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "fe074285-887b-48e0-bc90-59795dba0e89",
+        "email": "Jace.Walter67@gmail.com",
+        "firstName": "Zachariah",
+        "lastName": "Ziemann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/75760158",
+        "tenantId": null
+      },
+      {
+        "reference": "c89bee89-b185-4dc9-a175-6f8121f787cd",
+        "email": "Sam.Swaniawski@gmail.com",
+        "firstName": "Wendell",
+        "lastName": "Cummerata",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1031.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1ca5c903-7a67-4ee1-bb2e-56e35ec9a0f4",
+        "email": "Micaela87@yahoo.com",
+        "firstName": "Zion",
+        "lastName": "Brown",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1143.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d46b8e81-8fa3-49ac-b627-43baeb42f5c8",
+        "email": "Frances_Shanahan-Goodwin65@gmail.com",
+        "firstName": "Kelsi",
+        "lastName": "Nader",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/763.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "50e90164-ed39-4bca-908c-ab5df9f11958",
+        "email": "Justine_Deckow@hotmail.com",
+        "firstName": "Wanda",
+        "lastName": "Schaefer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1193.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "e905d1e7-030d-43b9-a34f-f9c48b2b211a",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 28618,
+        "username": "ftpuser1",
+        "password": "p@ssw0rd1",
+        "created_at": "2023-08-21T02:27:38.864Z",
+        "updated_at": "2023-08-20T15:56:40.539Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "bac90842-d2db-4c61-9ac5-621f09697ce6",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 80215,
+        "username": "ftpuser2",
+        "password": "p@ssw0rd2",
+        "created_at": "2023-08-20T11:26:04.154Z",
+        "updated_at": "2023-08-20T22:05:54.896Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "8e79636d-a2d2-4d4f-9d07-7665e369587f",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 97539,
+        "username": "ftpuser3",
+        "password": "p@ssw0rd3",
+        "created_at": "2023-08-21T01:45:09.791Z",
+        "updated_at": "2023-08-20T12:40:58.047Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "1e597c9b-f6bd-4f81-b263-c7a1e6106502",
+        "name": "FTP Server 4",
+        "ip_address": "192.0.2.1",
+        "port": 62963,
+        "username": "ftpuser4",
+        "password": "p@ssw0rd4",
+        "created_at": "2023-08-20T19:37:35.382Z",
+        "updated_at": "2023-08-20T18:58:14.614Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "12dc02eb-a751-4917-b447-7c74775f447e",
+        "name": "FTP Server 5",
+        "ip_address": "198.51.100.1",
+        "port": 75807,
+        "username": "ftpuser5",
+        "password": "p@ssw0rd5",
+        "created_at": "2023-08-21T01:54:18.652Z",
+        "updated_at": "2023-08-20T18:28:29.807Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "e0f7910f-d8ce-4ee0-a3d2-125903deaeb4",
+        "username": "user1",
+        "password": "password1",
+        "rights": "read",
+        "folder_path": "/folder1",
+        "active": false,
+        "created_at": "2023-08-20T12:38:52.327Z",
+        "updated_at": "2023-08-21T02:42:58.994Z",
+        "ftp_server_id": "1e597c9b-f6bd-4f81-b263-c7a1e6106502"
+      },
+      {
+        "id": "6ae6f37d-3cb1-46ed-84fd-b73fe56ca6c8",
+        "username": "user2",
+        "password": "password2",
+        "rights": "write",
+        "folder_path": "/folder2",
+        "active": true,
+        "created_at": "2023-08-21T07:13:37.802Z",
+        "updated_at": "2023-08-20T15:11:39.622Z",
+        "ftp_server_id": "1e597c9b-f6bd-4f81-b263-c7a1e6106502"
+      },
+      {
+        "id": "1040f279-ff46-4580-a0f4-b02f75ddc923",
+        "username": "user3",
+        "password": "password3",
+        "rights": "delete",
+        "folder_path": "/folder3",
+        "active": false,
+        "created_at": "2023-08-20T23:08:24.949Z",
+        "updated_at": "2023-08-21T08:15:49.264Z",
+        "ftp_server_id": "12dc02eb-a751-4917-b447-7c74775f447e"
+      },
+      {
+        "id": "7b64dac5-69a6-4a89-a625-30801fb5a953",
+        "username": "user4",
+        "password": "password4",
+        "rights": "upload",
+        "folder_path": "/folder4",
+        "active": true,
+        "created_at": "2023-08-20T10:35:50.978Z",
+        "updated_at": "2023-08-20T22:37:08.559Z",
+        "ftp_server_id": "8e79636d-a2d2-4d4f-9d07-7665e369587f"
+      },
+      {
+        "id": "439fcba9-480e-47e6-8eff-4a3efb281673",
+        "username": "user5",
+        "password": "password5",
+        "rights": "download",
+        "folder_path": "/folder5",
+        "active": false,
+        "created_at": "2023-08-20T21:33:23.906Z",
+        "updated_at": "2023-08-20T18:10:24.531Z",
+        "ftp_server_id": "1e597c9b-f6bd-4f81-b263-c7a1e6106502"
+      }
+    ],
+    "guest": [
+      {
+        "id": "700ebd2c-1d98-4795-958e-ab213d4d9032",
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "email": "alice.johnson@example.com",
+        "phone": "111-222-3333",
+        "address": "789 Elm Street",
+        "created_at": "2023-08-21T10:03:02.632Z",
+        "updated_at": "2023-08-20T15:11:42.138Z",
+        "ftp_user_id": "1040f279-ff46-4580-a0f4-b02f75ddc923"
+      },
+      {
+        "id": "cb451e64-af87-4e62-a630-554a1237c41b",
+        "first_name": "Bob",
+        "last_name": "Smith",
+        "email": "bob.smith@example.com",
+        "phone": "444-555-6666",
+        "address": "456 Oak Avenue",
+        "created_at": "2023-08-21T09:06:33.651Z",
+        "updated_at": "2023-08-20T14:33:47.346Z",
+        "ftp_user_id": "7b64dac5-69a6-4a89-a625-30801fb5a953"
+      },
+      {
+        "id": "c3decec5-3f24-48af-a96f-a5a553001e3a",
+        "first_name": "Eve",
+        "last_name": "Brown",
+        "email": "eve.brown@example.com",
+        "phone": "777-888-9999",
+        "address": "123 Maple Lane",
+        "created_at": "2023-08-20T14:25:53.320Z",
+        "updated_at": "2023-08-20T23:10:35.961Z",
+        "ftp_user_id": "6ae6f37d-3cb1-46ed-84fd-b73fe56ca6c8"
+      },
+      {
+        "id": "7603ab41-3f62-414b-976d-a881ac6da985",
+        "first_name": "Charlie",
+        "last_name": "Davis",
+        "email": "charlie.davis@example.com",
+        "phone": "123-456-7890",
+        "address": "654 Pine Drive",
+        "created_at": "2023-08-20T22:39:50.391Z",
+        "updated_at": "2023-08-21T02:02:00.748Z",
+        "ftp_user_id": "7b64dac5-69a6-4a89-a625-30801fb5a953"
+      },
+      {
+        "id": "75eec2bd-ed00-4e45-be61-85386ca0ccfb",
+        "first_name": "Dave",
+        "last_name": "Wilson",
+        "email": "dave.wilson@example.com",
+        "phone": "987-654-3210",
+        "address": "321 Cedar Road",
+        "created_at": "2023-08-21T08:46:48.542Z",
+        "updated_at": "2023-08-20T18:17:39.934Z",
+        "ftp_user_id": "7b64dac5-69a6-4a89-a625-30801fb5a953"
+      }
+    ],
+    "folder": [
+      {
+        "id": "525de356-2337-4c89-9056-7c04e341005a",
+        "name": "Folder 1",
+        "path": "/path1",
+        "size": 67207,
+        "last_modified": "2023-08-21T02:32:10.352Z",
+        "created_at": "2023-08-21T05:12:55.956Z",
+        "updated_at": "2023-08-20T15:09:12.909Z",
+        "ftp_user_id": "439fcba9-480e-47e6-8eff-4a3efb281673"
+      },
+      {
+        "id": "7e4853cb-e330-4f30-b940-cf1f2a1e1a89",
+        "name": "Folder 2",
+        "path": "/path2",
+        "size": 25944,
+        "last_modified": "2023-08-20T14:59:14.210Z",
+        "created_at": "2023-08-20T18:40:37.313Z",
+        "updated_at": "2023-08-21T06:14:41.777Z",
+        "ftp_user_id": "439fcba9-480e-47e6-8eff-4a3efb281673"
+      },
+      {
+        "id": "f961bbd7-1547-41cb-a56b-8c035b03c61d",
+        "name": "Folder 3",
+        "path": "/path3",
+        "size": 89708,
+        "last_modified": "2023-08-20T11:38:15.615Z",
+        "created_at": "2023-08-21T08:51:45.642Z",
+        "updated_at": "2023-08-20T19:57:02.325Z",
+        "ftp_user_id": "6ae6f37d-3cb1-46ed-84fd-b73fe56ca6c8"
+      },
+      {
+        "id": "8a09d2fb-02e2-4631-9e13-b1bebb19ed1a",
+        "name": "Folder 4",
+        "path": "/path4",
+        "size": 42317,
+        "last_modified": "2023-08-21T10:15:21.654Z",
+        "created_at": "2023-08-21T00:46:05.998Z",
+        "updated_at": "2023-08-20T17:43:30.845Z",
+        "ftp_user_id": "1040f279-ff46-4580-a0f4-b02f75ddc923"
+      },
+      {
+        "id": "424140d5-21fe-471b-833c-64787ab96ae2",
+        "name": "Folder 5",
+        "path": "/path5",
+        "size": 83525,
+        "last_modified": "2023-08-20T14:09:46.768Z",
+        "created_at": "2023-08-20T13:01:44.241Z",
+        "updated_at": "2023-08-21T04:09:12.587Z",
+        "ftp_user_id": "1040f279-ff46-4580-a0f4-b02f75ddc923"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ff9652c5-d4df-4a3a-ac51-0d1e0ba36a8e",
+        "email": "Florine.Cremin@yahoo.com",
+        "firstName": "Lucy",
+        "lastName": "Bruen",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/94053762",
+        "tenantId": null
+      },
+      {
+        "reference": "2ae83c51-9859-4919-8507-b8d9d75ebce1",
+        "email": "Christy_Hegmann60@hotmail.com",
+        "firstName": "Abigale",
+        "lastName": "Schroeder",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1033.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f5b46eb6-7a94-4b5d-93db-7a307366b8c4",
+        "email": "Jacky_Veum17@gmail.com",
+        "firstName": "Gwen",
+        "lastName": "Romaguera",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97566233",
+        "tenantId": null
+      },
+      {
+        "reference": "72576a23-0794-47d1-adad-6df45373dfbb",
+        "email": "Jairo.Larkin@gmail.com",
+        "firstName": "Kelsi",
+        "lastName": "Hermann",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1031.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "034c5934-3456-4dff-9144-ca4ccd96b04b",
+        "email": "Adolph.Conroy62@gmail.com",
+        "firstName": "Cali",
+        "lastName": "Thiel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53883192",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "6f26661f-153f-4ebb-a525-63bcf18c17a6",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 61562,
+        "username": "admin",
+        "password": "P@ssw0rd",
+        "created_at": "2023-08-20T17:49:21.265Z",
+        "updated_at": "2023-08-20T23:31:17.369Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "4ac2c46e-b5cb-42d5-94d7-946ba2da623c",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 2354,
+        "username": "user1",
+        "password": "SecurePass123",
+        "created_at": "2023-08-21T01:10:44.277Z",
+        "updated_at": "2023-08-20T17:33:19.728Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "f6d74201-4ee2-4f50-b0c6-3e28ee4b4f86",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 72514,
+        "username": "ftpadmin",
+        "password": "FTP@123",
+        "created_at": "2023-08-21T07:36:08.231Z",
+        "updated_at": "2023-08-20T20:24:09.198Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "aea7b47c-2d08-47ef-9948-2439132353ce",
+        "name": "FTP Server 4",
+        "ip_address": "192.168.1.1",
+        "port": 11310,
+        "username": "ftpuser",
+        "password": "Password123!",
+        "created_at": "2023-08-21T10:31:19.739Z",
+        "updated_at": "2023-08-21T04:33:13.336Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "759970d3-46b4-46c9-8df8-5dddf03dfd3b",
+        "name": "FTP Server 5",
+        "ip_address": "10.0.1.1",
+        "port": 65913,
+        "username": "admin123",
+        "password": "Admin@123",
+        "created_at": "2023-08-21T09:06:19.616Z",
+        "updated_at": "2023-08-21T01:25:04.434Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "456b9b0a-d7d9-45e9-9889-c21547cb2d61",
+        "username": "user1",
+        "password": "Pass123!",
+        "rights": "Read",
+        "folder_path": "/home/user1",
+        "active": false,
+        "created_at": "2023-08-21T01:54:17.115Z",
+        "updated_at": "2023-08-21T03:31:50.557Z",
+        "ftp_server_id": "f6d74201-4ee2-4f50-b0c6-3e28ee4b4f86"
+      },
+      {
+        "id": "986d4fd5-95bb-438c-b339-6b73649c8662",
+        "username": "user2",
+        "password": "SecurePassword",
+        "rights": "Write",
+        "folder_path": "/var/www/html",
+        "active": true,
+        "created_at": "2023-08-20T12:02:19.820Z",
+        "updated_at": "2023-08-20T12:34:20.549Z",
+        "ftp_server_id": "4ac2c46e-b5cb-42d5-94d7-946ba2da623c"
+      },
+      {
+        "id": "9f5f3b2b-2fc6-4c98-9ca1-11bf1ccfa21e",
+        "username": "user3",
+        "password": "FTP@456",
+        "rights": "Read/Write",
+        "folder_path": "/data/uploads",
+        "active": false,
+        "created_at": "2023-08-20T23:00:51.958Z",
+        "updated_at": "2023-08-21T00:40:00.651Z",
+        "ftp_server_id": "aea7b47c-2d08-47ef-9948-2439132353ce"
+      },
+      {
+        "id": "18b7d731-4351-49f9-9399-00dbc08da1ec",
+        "username": "user4",
+        "password": "Password123",
+        "rights": "Full Access",
+        "folder_path": "/ftp/files",
+        "active": true,
+        "created_at": "2023-08-21T01:28:04.107Z",
+        "updated_at": "2023-08-20T16:34:21.099Z",
+        "ftp_server_id": "4ac2c46e-b5cb-42d5-94d7-946ba2da623c"
+      },
+      {
+        "id": "147d1f2d-1a03-4dc9-8f63-46182b0ac690",
+        "username": "user5",
+        "password": "User@123",
+        "rights": "Limited Access",
+        "folder_path": "/public_html",
+        "active": true,
+        "created_at": "2023-08-20T11:12:33.751Z",
+        "updated_at": "2023-08-21T03:05:51.404Z",
+        "ftp_server_id": "aea7b47c-2d08-47ef-9948-2439132353ce"
+      }
+    ],
+    "guest": [
+      {
+        "id": "a8612a55-a911-4e90-8bd3-d33abd23455b",
+        "first_name": "Alex",
+        "last_name": "Smith",
+        "email": "alex.smith@example.com",
+        "phone": "555-111-2222",
+        "address": "789 Elm Street",
+        "created_at": "2023-08-21T07:07:34.619Z",
+        "updated_at": "2023-08-20T16:40:52.317Z",
+        "ftp_user_id": "986d4fd5-95bb-438c-b339-6b73649c8662"
+      },
+      {
+        "id": "a5596f46-b7f5-416d-af74-81e3225d22ab",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "email": "emily.johnson@example.com",
+        "phone": "555-333-4444",
+        "address": "123 Oak Avenue",
+        "created_at": "2023-08-20T15:54:01.471Z",
+        "updated_at": "2023-08-20T10:57:51.745Z",
+        "ftp_user_id": "986d4fd5-95bb-438c-b339-6b73649c8662"
+      },
+      {
+        "id": "717d8e99-785a-4a19-9dd4-bd56296fa2de",
+        "first_name": "Daniel",
+        "last_name": "Williams",
+        "email": "daniel.williams@example.com",
+        "phone": "555-555-6666",
+        "address": "456 Maple Drive",
+        "created_at": "2023-08-20T14:47:19.640Z",
+        "updated_at": "2023-08-21T03:03:47.169Z",
+        "ftp_user_id": "9f5f3b2b-2fc6-4c98-9ca1-11bf1ccfa21e"
+      },
+      {
+        "id": "bfe598a4-1362-436c-af56-72667a85758c",
+        "first_name": "Olivia",
+        "last_name": "Brown",
+        "email": "olivia.brown@example.com",
+        "phone": "555-777-8888",
+        "address": "321 Pine Lane",
+        "created_at": "2023-08-21T09:58:22.513Z",
+        "updated_at": "2023-08-20T14:07:44.274Z",
+        "ftp_user_id": "986d4fd5-95bb-438c-b339-6b73649c8662"
+      },
+      {
+        "id": "cd9e76ae-7c4a-45fa-b8e1-468eba087fd1",
+        "first_name": "Sophia",
+        "last_name": "Jones",
+        "email": "sophia.jones@example.com",
+        "phone": "555-999-0000",
+        "address": "654 Cedar Road",
+        "created_at": "2023-08-20T20:58:16.672Z",
+        "updated_at": "2023-08-20T19:05:32.752Z",
+        "ftp_user_id": "456b9b0a-d7d9-45e9-9889-c21547cb2d61"
+      }
+    ],
+    "folder": [
+      {
+        "id": "89767a41-df53-4718-b5db-cb76c35cde8d",
+        "name": "Documents",
+        "path": "/home/user1/documents",
+        "size": 20199,
+        "last_modified": "2023-08-20T18:07:33.025Z",
+        "created_at": "2023-08-20T16:56:02.522Z",
+        "updated_at": "2023-08-21T09:50:28.251Z",
+        "ftp_user_id": "147d1f2d-1a03-4dc9-8f63-46182b0ac690"
+      },
+      {
+        "id": "a8aadbbe-dfee-4fb6-8ea5-51309c568839",
+        "name": "Photos",
+        "path": "/home/user1/photos",
+        "size": 85854,
+        "last_modified": "2023-08-20T19:30:32.941Z",
+        "created_at": "2023-08-20T22:55:28.383Z",
+        "updated_at": "2023-08-21T03:00:17.121Z",
+        "ftp_user_id": "456b9b0a-d7d9-45e9-9889-c21547cb2d61"
+      },
+      {
+        "id": "2c27cdd6-eccc-4b7e-baaa-c39e64ef69bb",
+        "name": "Videos",
+        "path": "/home/user1/videos",
+        "size": 31336,
+        "last_modified": "2023-08-21T08:06:52.318Z",
+        "created_at": "2023-08-20T17:16:53.448Z",
+        "updated_at": "2023-08-20T12:44:12.658Z",
+        "ftp_user_id": "986d4fd5-95bb-438c-b339-6b73649c8662"
+      },
+      {
+        "id": "6c2a9deb-2f43-4467-ad91-5372527cfe45",
+        "name": "Music",
+        "path": "/home/user1/music",
+        "size": 33167,
+        "last_modified": "2023-08-21T01:25:05.222Z",
+        "created_at": "2023-08-21T06:11:21.405Z",
+        "updated_at": "2023-08-21T04:33:06.700Z",
+        "ftp_user_id": "456b9b0a-d7d9-45e9-9889-c21547cb2d61"
+      },
+      {
+        "id": "ae72c967-bef7-47e4-9fdb-d1a1afe749c6",
+        "name": "Downloads",
+        "path": "/home/user1/downloads",
+        "size": 28528,
+        "last_modified": "2023-08-20T13:30:51.474Z",
+        "created_at": "2023-08-20T17:11:51.048Z",
+        "updated_at": "2023-08-21T02:15:51.221Z",
+        "ftp_user_id": "986d4fd5-95bb-438c-b339-6b73649c8662"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "5f805681-0d55-406a-b3c0-0a1cd3948307",
+        "email": "Palma26@hotmail.com",
+        "firstName": "Duncan",
+        "lastName": "Rippin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38018946",
+        "tenantId": null
+      },
+      {
+        "reference": "9602e2cf-49ba-424b-a7e6-7bf53b94531b",
+        "email": "Rosa.Corkery@gmail.com",
+        "firstName": "Eudora",
+        "lastName": "Sauer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/35.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "404923e1-096b-4b1b-a4ed-178e8444ac96",
+        "email": "Aliya.Boyer@gmail.com",
+        "firstName": "Brenna",
+        "lastName": "Frami",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96548029",
+        "tenantId": null
+      },
+      {
+        "reference": "aa45ccea-a621-4b0c-bf31-9b281d715ef1",
+        "email": "Amber.Bartell12@yahoo.com",
+        "firstName": "Dameon",
+        "lastName": "Anderson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4964085",
+        "tenantId": null
+      },
+      {
+        "reference": "2cf597d2-bc2f-4e00-ade5-8b3760557df1",
+        "email": "Kellen_Sporer82@gmail.com",
+        "firstName": "Shad",
+        "lastName": "Glover",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/70964600",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "80cb1c4a-4d2a-42d7-be18-bbda09340257",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 4168,
+        "username": "ftpuser1",
+        "password": "p@ssw0rd1",
+        "created_at": "2023-08-21T08:27:33.415Z",
+        "updated_at": "2023-08-20T12:02:30.235Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "65b23eeb-f35a-42f7-a4b5-66b1a9671d08",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 99811,
+        "username": "ftpuser2",
+        "password": "p@ssw0rd2",
+        "created_at": "2023-08-20T21:30:52.105Z",
+        "updated_at": "2023-08-20T15:25:41.690Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "4b499736-eac3-4e2f-9a66-749dd3875954",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 86660,
+        "username": "ftpuser3",
+        "password": "p@ssw0rd3",
+        "created_at": "2023-08-20T17:18:54.615Z",
+        "updated_at": "2023-08-21T08:34:16.381Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "78a3ba01-03fb-4a5b-9646-ff1a953a8da5",
+        "name": "FTP Server 4",
+        "ip_address": "192.0.2.1",
+        "port": 56890,
+        "username": "ftpuser4",
+        "password": "p@ssw0rd4",
+        "created_at": "2023-08-20T19:52:16.788Z",
+        "updated_at": "2023-08-20T23:28:22.463Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "a1f63bf5-ad01-49f6-b0c6-b6cddde27b91",
+        "name": "FTP Server 5",
+        "ip_address": "198.51.100.1",
+        "port": 53200,
+        "username": "ftpuser5",
+        "password": "p@ssw0rd5",
+        "created_at": "2023-08-21T04:13:26.535Z",
+        "updated_at": "2023-08-20T13:10:20.310Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "86bf742f-98f4-48e9-b5e1-d8b614c1adf8",
+        "username": "user1",
+        "password": "p@ssw0rd1",
+        "rights": "read",
+        "folder_path": "/path/to/folder1",
+        "active": true,
+        "created_at": "2023-08-21T05:27:17.423Z",
+        "updated_at": "2023-08-20T23:42:43.756Z",
+        "ftp_server_id": "4b499736-eac3-4e2f-9a66-749dd3875954"
+      },
+      {
+        "id": "75d34fa1-0949-490b-ac08-1a9a157d4c53",
+        "username": "user2",
+        "password": "p@ssw0rd2",
+        "rights": "write",
+        "folder_path": "/path/to/folder2",
+        "active": false,
+        "created_at": "2023-08-21T04:56:56.701Z",
+        "updated_at": "2023-08-20T18:34:14.887Z",
+        "ftp_server_id": "a1f63bf5-ad01-49f6-b0c6-b6cddde27b91"
+      },
+      {
+        "id": "5eed5707-7ca0-4d5c-88e2-d14417881452",
+        "username": "user3",
+        "password": "p@ssw0rd3",
+        "rights": "read/write",
+        "folder_path": "/path/to/folder3",
+        "active": false,
+        "created_at": "2023-08-21T04:18:45.905Z",
+        "updated_at": "2023-08-20T17:47:38.647Z",
+        "ftp_server_id": "65b23eeb-f35a-42f7-a4b5-66b1a9671d08"
+      },
+      {
+        "id": "13cd9937-797f-4cb8-a9df-7863222486db",
+        "username": "user4",
+        "password": "p@ssw0rd4",
+        "rights": "none",
+        "folder_path": "/path/to/folder4",
+        "active": false,
+        "created_at": "2023-08-21T03:58:11.153Z",
+        "updated_at": "2023-08-20T14:45:16.509Z",
+        "ftp_server_id": "80cb1c4a-4d2a-42d7-be18-bbda09340257"
+      },
+      {
+        "id": "a437c262-5207-4edf-9c65-e3de66b206f3",
+        "username": "user5",
+        "password": "p@ssw0rd5",
+        "rights": "custom",
+        "folder_path": "/path/to/folder5",
+        "active": true,
+        "created_at": "2023-08-21T06:48:27.827Z",
+        "updated_at": "2023-08-21T08:22:21.715Z",
+        "ftp_server_id": "65b23eeb-f35a-42f7-a4b5-66b1a9671d08"
+      }
+    ],
+    "guest": [
+      {
+        "id": "31216781-ed0a-4b66-a512-c89881aaf490",
+        "first_name": "Alice",
+        "last_name": "Smith",
+        "email": "alice.smith@example.com",
+        "phone": "555-123-4567",
+        "address": "789 Elm St, New York, NY",
+        "created_at": "2023-08-20T20:16:43.556Z",
+        "updated_at": "2023-08-21T10:23:09.336Z",
+        "ftp_user_id": "13cd9937-797f-4cb8-a9df-7863222486db"
+      },
+      {
+        "id": "ed48a77f-0a58-4b86-b7c6-4bdd3a78b614",
+        "first_name": "Bob",
+        "last_name": "Johnson",
+        "email": "bob.johnson@example.com",
+        "phone": "555-987-6543",
+        "address": "456 Oak St, Los Angeles, CA",
+        "created_at": "2023-08-20T17:03:12.002Z",
+        "updated_at": "2023-08-21T05:16:30.868Z",
+        "ftp_user_id": "a437c262-5207-4edf-9c65-e3de66b206f3"
+      },
+      {
+        "id": "0e15d5cc-139b-4d8b-958b-eaa096f32647",
+        "first_name": "Eve",
+        "last_name": "Williams",
+        "email": "eve.williams@example.com",
+        "phone": "555-456-7890",
+        "address": "123 Pine St, Chicago, IL",
+        "created_at": "2023-08-21T05:41:32.546Z",
+        "updated_at": "2023-08-20T13:20:50.052Z",
+        "ftp_user_id": "5eed5707-7ca0-4d5c-88e2-d14417881452"
+      },
+      {
+        "id": "dbc8acde-5b32-482d-b8b1-645d5d558fb9",
+        "first_name": "Charlie",
+        "last_name": "Jones",
+        "email": "charlie.jones@example.com",
+        "phone": "555-321-6549",
+        "address": "987 Maple St, Houston, TX",
+        "created_at": "2023-08-21T07:50:08.755Z",
+        "updated_at": "2023-08-20T20:18:41.564Z",
+        "ftp_user_id": "75d34fa1-0949-490b-ac08-1a9a157d4c53"
+      },
+      {
+        "id": "48de5125-f2bc-4ad6-8640-0e6e5480fda6",
+        "first_name": "Mallory",
+        "last_name": "Brown",
+        "email": "mallory.brown@example.com",
+        "phone": "555-789-0123",
+        "address": "654 Main St, Miami, FL",
+        "created_at": "2023-08-20T22:49:23.232Z",
+        "updated_at": "2023-08-20T17:10:17.402Z",
+        "ftp_user_id": "86bf742f-98f4-48e9-b5e1-d8b614c1adf8"
+      }
+    ],
+    "folder": [
+      {
+        "id": "a4d86fa7-8b7b-425a-988e-7032842a3ac6",
+        "name": "Folder 1",
+        "path": "/path/to/folder1",
+        "size": 75510,
+        "last_modified": "2023-08-21T05:27:53.494Z",
+        "created_at": "2023-08-20T21:18:01.394Z",
+        "updated_at": "2023-08-20T13:41:20.281Z",
+        "ftp_user_id": "86bf742f-98f4-48e9-b5e1-d8b614c1adf8"
+      },
+      {
+        "id": "74962daa-6fd4-4f03-930e-f84229718f30",
+        "name": "Folder 2",
+        "path": "/path/to/folder2",
+        "size": 57544,
+        "last_modified": "2023-08-21T03:54:46.494Z",
+        "created_at": "2023-08-20T23:56:49.933Z",
+        "updated_at": "2023-08-20T18:46:07.089Z",
+        "ftp_user_id": "a437c262-5207-4edf-9c65-e3de66b206f3"
+      },
+      {
+        "id": "94814489-1207-431e-8046-89a7c7a77278",
+        "name": "Folder 3",
+        "path": "/path/to/folder3",
+        "size": 69252,
+        "last_modified": "2023-08-20T21:56:47.879Z",
+        "created_at": "2023-08-21T07:43:54.451Z",
+        "updated_at": "2023-08-21T07:48:28.447Z",
+        "ftp_user_id": "86bf742f-98f4-48e9-b5e1-d8b614c1adf8"
+      },
+      {
+        "id": "781f4e8d-fba7-4d35-b91e-eb12f9a90945",
+        "name": "Folder 4",
+        "path": "/path/to/folder4",
+        "size": 6550,
+        "last_modified": "2023-08-20T10:47:08.583Z",
+        "created_at": "2023-08-20T16:23:06.535Z",
+        "updated_at": "2023-08-20T19:06:42.942Z",
+        "ftp_user_id": "a437c262-5207-4edf-9c65-e3de66b206f3"
+      },
+      {
+        "id": "f4839ba4-f1e7-427f-bed8-1a4cabdd597a",
+        "name": "Folder 5",
+        "path": "/path/to/folder5",
+        "size": 7266,
+        "last_modified": "2023-08-21T02:53:51.557Z",
+        "created_at": "2023-08-20T13:30:25.510Z",
+        "updated_at": "2023-08-21T05:48:30.080Z",
+        "ftp_user_id": "a437c262-5207-4edf-9c65-e3de66b206f3"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "362d21cc-8bae-43ba-8b0f-cfc8fb26704d",
+        "email": "Dallas.Steuber@gmail.com",
+        "firstName": "Nya",
+        "lastName": "Stehr",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/93709696",
+        "tenantId": null
+      },
+      {
+        "reference": "802e024c-b21c-4ca0-adb0-696c88824b9a",
+        "email": "Ruben57@gmail.com",
+        "firstName": "Karine",
+        "lastName": "Bahringer-Moore",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1055.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "312b6ec7-cded-437f-bf9c-0765915d4a4f",
+        "email": "Nathen.Reinger84@hotmail.com",
+        "firstName": "Shayne",
+        "lastName": "Waelchi",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/574.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "564be27a-ec06-4931-a77e-37d1b2ebd11d",
+        "email": "Allen42@yahoo.com",
+        "firstName": "Mollie",
+        "lastName": "Renner",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/146.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a8b993d7-723b-4430-ad70-ce8c01588ee9",
+        "email": "Winston_Deckow@gmail.com",
+        "firstName": "Hipolito",
+        "lastName": "Kunze",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/635.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "1a477a85-e561-47e1-9fc2-2e83ab85d77d",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 40646,
+        "username": "admin",
+        "password": "P@ssw0rd1",
+        "created_at": "2023-08-20T23:14:44.138Z",
+        "updated_at": "2023-08-20T12:21:42.235Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "a5b9ebda-aa32-45af-bd79-7b2ce1cd759f",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 89091,
+        "username": "user1",
+        "password": "SecurePassword2",
+        "created_at": "2023-08-21T03:55:39.767Z",
+        "updated_at": "2023-08-21T06:52:56.634Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "6f888af3-f9c7-4c07-aa7e-12f37e5080e9",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 2446,
+        "username": "ftpadmin",
+        "password": "FTP@123",
+        "created_at": "2023-08-21T03:16:26.670Z",
+        "updated_at": "2023-08-21T09:15:01.421Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "63e7011a-2c74-4304-b14c-f18498bf17d9",
+        "name": "FTP Server 4",
+        "ip_address": "192.168.1.1",
+        "port": 53030,
+        "username": "ftpuser",
+        "password": "Password123",
+        "created_at": "2023-08-20T11:58:12.265Z",
+        "updated_at": "2023-08-20T23:44:41.771Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "f9bc0a66-7138-4306-b2ea-a25ec62b20c8",
+        "name": "FTP Server 5",
+        "ip_address": "172.16.1.1",
+        "port": 92516,
+        "username": "ftpadmin1",
+        "password": "Admin123!",
+        "created_at": "2023-08-20T21:39:59.548Z",
+        "updated_at": "2023-08-21T08:22:08.261Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "8962cd7c-9100-45d3-96a2-db3556e72891",
+        "username": "user1",
+        "password": "P@ssw0rd1",
+        "rights": "Read",
+        "folder_path": "/home/user1",
+        "active": false,
+        "created_at": "2023-08-20T17:31:21.433Z",
+        "updated_at": "2023-08-20T13:27:32.288Z",
+        "ftp_server_id": "6f888af3-f9c7-4c07-aa7e-12f37e5080e9"
+      },
+      {
+        "id": "1fbf3906-93dd-4b0b-9bec-74f5ac214b5b",
+        "username": "user2",
+        "password": "SecurePassword2",
+        "rights": "Write",
+        "folder_path": "/var/www/html",
+        "active": false,
+        "created_at": "2023-08-20T15:54:48.312Z",
+        "updated_at": "2023-08-21T09:25:32.905Z",
+        "ftp_server_id": "a5b9ebda-aa32-45af-bd79-7b2ce1cd759f"
+      },
+      {
+        "id": "a9aa00ba-9d4c-4775-a8ab-a5a129271b36",
+        "username": "user3",
+        "password": "FTP@123",
+        "rights": "Read/Write",
+        "folder_path": "/data/files",
+        "active": false,
+        "created_at": "2023-08-20T18:47:38.823Z",
+        "updated_at": "2023-08-20T16:53:06.524Z",
+        "ftp_server_id": "63e7011a-2c74-4304-b14c-f18498bf17d9"
+      },
+      {
+        "id": "ba1252bd-44ea-485d-90ad-d324ce5e1fc5",
+        "username": "user4",
+        "password": "Password123",
+        "rights": "Full Access",
+        "folder_path": "/documents",
+        "active": true,
+        "created_at": "2023-08-20T13:08:26.223Z",
+        "updated_at": "2023-08-20T12:53:05.924Z",
+        "ftp_server_id": "63e7011a-2c74-4304-b14c-f18498bf17d9"
+      },
+      {
+        "id": "9928db5f-9b76-444e-be55-847cd99140aa",
+        "username": "user5",
+        "password": "Admin123!",
+        "rights": "Limited Access",
+        "folder_path": "/public",
+        "active": false,
+        "created_at": "2023-08-21T08:55:17.908Z",
+        "updated_at": "2023-08-20T11:07:07.574Z",
+        "ftp_server_id": "63e7011a-2c74-4304-b14c-f18498bf17d9"
+      }
+    ],
+    "guest": [
+      {
+        "id": "18d29e06-27c9-4472-bee3-661a9b14f8e2",
+        "first_name": "Alex",
+        "last_name": "Johnson",
+        "email": "alex.johnson@example.com",
+        "phone": "555-123-4567",
+        "address": "789 Elm St, Anytown, USA",
+        "created_at": "2023-08-20T11:53:09.423Z",
+        "updated_at": "2023-08-21T05:52:34.482Z",
+        "ftp_user_id": "1fbf3906-93dd-4b0b-9bec-74f5ac214b5b"
+      },
+      {
+        "id": "ab0f280e-6a4b-43c9-bc5e-33009c6591ab",
+        "first_name": "Emma",
+        "last_name": "Brown",
+        "email": "emma.brown@example.com",
+        "phone": "555-987-6543",
+        "address": "123 Oak St, Cityville, USA",
+        "created_at": "2023-08-20T13:34:23.673Z",
+        "updated_at": "2023-08-21T07:04:47.015Z",
+        "ftp_user_id": "9928db5f-9b76-444e-be55-847cd99140aa"
+      },
+      {
+        "id": "1cc12b6d-b3d2-4dc2-9570-5dd22269e247",
+        "first_name": "Daniel",
+        "last_name": "Miller",
+        "email": "daniel.miller@example.com",
+        "phone": "555-789-0123",
+        "address": "456 Maple St, Townsville, USA",
+        "created_at": "2023-08-20T12:12:13.128Z",
+        "updated_at": "2023-08-21T10:33:21.003Z",
+        "ftp_user_id": "a9aa00ba-9d4c-4775-a8ab-a5a129271b36"
+      },
+      {
+        "id": "17ad32fd-2323-4f8b-8b4f-cf0ec47e575c",
+        "first_name": "Olivia",
+        "last_name": "Davis",
+        "email": "olivia.davis@example.com",
+        "phone": "555-456-7890",
+        "address": "321 Pine St, Villageland, USA",
+        "created_at": "2023-08-21T04:31:06.311Z",
+        "updated_at": "2023-08-21T02:33:43.314Z",
+        "ftp_user_id": "a9aa00ba-9d4c-4775-a8ab-a5a129271b36"
+      },
+      {
+        "id": "5893b3fa-0542-46fe-b8f2-759977b09905",
+        "first_name": "Sophia",
+        "last_name": "Wilson",
+        "email": "sophia.wilson@example.com",
+        "phone": "555-012-3456",
+        "address": "654 Cedar St, Hamletown, USA",
+        "created_at": "2023-08-20T12:02:38.172Z",
+        "updated_at": "2023-08-20T20:45:00.487Z",
+        "ftp_user_id": "ba1252bd-44ea-485d-90ad-d324ce5e1fc5"
+      }
+    ],
+    "folder": [
+      {
+        "id": "013b8aa7-acfd-414c-b660-b7af5f135ae9",
+        "name": "Documents",
+        "path": "/home/user1/documents",
+        "size": 5072,
+        "last_modified": "2023-08-20T23:30:02.327Z",
+        "created_at": "2023-08-21T00:27:13.300Z",
+        "updated_at": "2023-08-20T23:22:24.721Z",
+        "ftp_user_id": "9928db5f-9b76-444e-be55-847cd99140aa"
+      },
+      {
+        "id": "0e3f3a07-be23-420e-b0d7-4b3958398cec",
+        "name": "Photos",
+        "path": "/home/user1/photos",
+        "size": 55175,
+        "last_modified": "2023-08-21T04:24:47.472Z",
+        "created_at": "2023-08-21T01:12:26.736Z",
+        "updated_at": "2023-08-20T13:11:41.179Z",
+        "ftp_user_id": "8962cd7c-9100-45d3-96a2-db3556e72891"
+      },
+      {
+        "id": "0e5c34d1-2bfd-4db4-af06-b361ecac0feb",
+        "name": "Videos",
+        "path": "/home/user1/videos",
+        "size": 75574,
+        "last_modified": "2023-08-20T12:49:00.229Z",
+        "created_at": "2023-08-21T10:20:35.551Z",
+        "updated_at": "2023-08-21T10:22:24.582Z",
+        "ftp_user_id": "1fbf3906-93dd-4b0b-9bec-74f5ac214b5b"
+      },
+      {
+        "id": "684e9471-df41-41c1-9569-a616652087c3",
+        "name": "Music",
+        "path": "/home/user1/music",
+        "size": 17507,
+        "last_modified": "2023-08-20T13:59:56.472Z",
+        "created_at": "2023-08-21T02:43:04.088Z",
+        "updated_at": "2023-08-21T06:57:05.793Z",
+        "ftp_user_id": "a9aa00ba-9d4c-4775-a8ab-a5a129271b36"
+      },
+      {
+        "id": "d11ebe36-cf87-4a80-a06e-17a15c47c092",
+        "name": "Projects",
+        "path": "/home/user1/projects",
+        "size": 62892,
+        "last_modified": "2023-08-21T02:55:13.556Z",
+        "created_at": "2023-08-20T20:41:59.286Z",
+        "updated_at": "2023-08-20T13:05:45.072Z",
+        "ftp_user_id": "1fbf3906-93dd-4b0b-9bec-74f5ac214b5b"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1f9c4fd5-9e9b-4d31-86e1-4690a786d059",
+        "email": "Destini_Hickle51@hotmail.com",
+        "firstName": "Celia",
+        "lastName": "Bauch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/99326028",
+        "tenantId": null
+      },
+      {
+        "reference": "4232e783-c463-4367-afd9-59955f267de7",
+        "email": "Maynard_Treutel-Moen@yahoo.com",
+        "firstName": "Doyle",
+        "lastName": "Schroeder",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/733.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "29049729-492e-4e81-9241-e6113fac023a",
+        "email": "Tiffany.Braun66@yahoo.com",
+        "firstName": "Randy",
+        "lastName": "Kunze",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73209432",
+        "tenantId": null
+      },
+      {
+        "reference": "897f103e-5b65-45e9-9126-b93384157891",
+        "email": "Giuseppe69@gmail.com",
+        "firstName": "Demond",
+        "lastName": "Herzog",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1022.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d0c77d66-8360-4be5-b0fe-a85c8f193a98",
+        "email": "Martin_Bernier0@gmail.com",
+        "firstName": "Hal",
+        "lastName": "Wisoky",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/381.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "8215dba7-6645-4053-ad50-c9e2a648447b",
+        "name": "Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 8000,
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-21T08:08:30.651Z",
+        "updated_at": "2023-08-21T08:31:08.999Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "9ad7cef7-14f3-4b6d-afa8-6588c1f91a25",
+        "name": "Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 71043,
+        "username": "user1",
+        "password": "password123",
+        "created_at": "2023-08-20T23:42:51.170Z",
+        "updated_at": "2023-08-20T11:12:31.985Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "773bc9f8-cac9-44a2-a423-be23d66f0323",
+        "name": "Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 99448,
+        "username": "ftpadmin",
+        "password": "securepassword",
+        "created_at": "2023-08-20T14:06:46.112Z",
+        "updated_at": "2023-08-21T00:13:51.200Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "e8e10435-0670-475e-bb4b-a747ab85f1a3",
+        "name": "Server 4",
+        "ip_address": "192.0.2.1",
+        "port": 46947,
+        "username": "ftpuser",
+        "password": "ftp123",
+        "created_at": "2023-08-21T02:08:38.588Z",
+        "updated_at": "2023-08-20T11:12:23.248Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "7f9432b9-eed5-4771-a461-193ae2770c22",
+        "name": "Server 5",
+        "ip_address": "198.51.100.1",
+        "port": 47556,
+        "username": "ftpadmin1",
+        "password": "admin123",
+        "created_at": "2023-08-20T18:28:54.860Z",
+        "updated_at": "2023-08-21T06:57:43.025Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "2af14bc6-75b4-4e19-bfc4-badfe9fb8184",
+        "username": "user1",
+        "password": "password1",
+        "rights": "read",
+        "folder_path": "/home/user1",
+        "active": false,
+        "created_at": "2023-08-21T05:52:51.252Z",
+        "updated_at": "2023-08-20T16:12:21.756Z",
+        "ftp_server_id": "8215dba7-6645-4053-ad50-c9e2a648447b"
+      },
+      {
+        "id": "1089eb9b-b08d-4bcc-be14-1a1e5511bea1",
+        "username": "user2",
+        "password": "password2",
+        "rights": "write",
+        "folder_path": "/var/www/html",
+        "active": true,
+        "created_at": "2023-08-21T05:32:01.496Z",
+        "updated_at": "2023-08-21T02:26:15.811Z",
+        "ftp_server_id": "8215dba7-6645-4053-ad50-c9e2a648447b"
+      },
+      {
+        "id": "bbd9c7db-5536-4256-8f35-1f847a0cd3ee",
+        "username": "user3",
+        "password": "password3",
+        "rights": "execute",
+        "folder_path": "/data/files",
+        "active": true,
+        "created_at": "2023-08-20T21:30:02.497Z",
+        "updated_at": "2023-08-21T07:49:42.401Z",
+        "ftp_server_id": "7f9432b9-eed5-4771-a461-193ae2770c22"
+      },
+      {
+        "id": "2aaeabac-ddea-43bd-a83d-6bf111b9f202",
+        "username": "user4",
+        "password": "password4",
+        "rights": "delete",
+        "folder_path": "/shared/documents",
+        "active": true,
+        "created_at": "2023-08-20T13:06:29.524Z",
+        "updated_at": "2023-08-21T10:31:09.254Z",
+        "ftp_server_id": "8215dba7-6645-4053-ad50-c9e2a648447b"
+      },
+      {
+        "id": "8f278cc7-2160-4d9e-86df-8238d1846577",
+        "username": "user5",
+        "password": "password5",
+        "rights": "rename",
+        "folder_path": "/ftp/user1",
+        "active": false,
+        "created_at": "2023-08-21T03:14:34.912Z",
+        "updated_at": "2023-08-20T15:30:37.843Z",
+        "ftp_server_id": "e8e10435-0670-475e-bb4b-a747ab85f1a3"
+      }
+    ],
+    "guest": [
+      {
+        "id": "8f5477cc-7f49-489b-96e8-d4a7c1a96f52",
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "email": "alice.johnson@example.com",
+        "phone": "555-123-4567",
+        "address": "789 Elm St",
+        "created_at": "2023-08-20T18:33:00.133Z",
+        "updated_at": "2023-08-20T20:29:48.470Z",
+        "ftp_user_id": "bbd9c7db-5536-4256-8f35-1f847a0cd3ee"
+      },
+      {
+        "id": "ff73f39e-7b55-49a8-b513-e8229bcb7bbd",
+        "first_name": "Bob",
+        "last_name": "Smith",
+        "email": "bob.smith@example.com",
+        "phone": "555-987-6543",
+        "address": "321 Oak St",
+        "created_at": "2023-08-20T11:56:10.597Z",
+        "updated_at": "2023-08-20T15:46:45.679Z",
+        "ftp_user_id": "2aaeabac-ddea-43bd-a83d-6bf111b9f202"
+      },
+      {
+        "id": "c6d6877f-b9ea-483e-81f5-87de2fec957f",
+        "first_name": "Eve",
+        "last_name": "Brown",
+        "email": "eve.brown@example.com",
+        "phone": "555-111-2222",
+        "address": "654 Maple Ave",
+        "created_at": "2023-08-20T21:40:22.540Z",
+        "updated_at": "2023-08-20T17:26:19.569Z",
+        "ftp_user_id": "2aaeabac-ddea-43bd-a83d-6bf111b9f202"
+      },
+      {
+        "id": "d2ebafed-7442-4f76-8905-73b6d12e5c0d",
+        "first_name": "Charlie",
+        "last_name": "Davis",
+        "email": "charlie.davis@example.com",
+        "phone": "555-888-9999",
+        "address": "987 Pine Rd",
+        "created_at": "2023-08-20T11:08:08.547Z",
+        "updated_at": "2023-08-20T18:18:46.081Z",
+        "ftp_user_id": "bbd9c7db-5536-4256-8f35-1f847a0cd3ee"
+      },
+      {
+        "id": "81bf84ad-911d-459f-8986-bb9ef4200a26",
+        "first_name": "Mallory",
+        "last_name": "Wilson",
+        "email": "mallory.wilson@example.com",
+        "phone": "555-444-3333",
+        "address": "123 Main St",
+        "created_at": "2023-08-20T23:15:03.733Z",
+        "updated_at": "2023-08-21T03:29:48.676Z",
+        "ftp_user_id": "2af14bc6-75b4-4e19-bfc4-badfe9fb8184"
+      }
+    ],
+    "folder": [
+      {
+        "id": "20923228-9b4f-4e8a-805b-fc4670cd4a63",
+        "name": "Folder 1",
+        "path": "/home/user1/folder1",
+        "size": 207,
+        "last_modified": "2023-08-20T16:43:57.539Z",
+        "created_at": "2023-08-20T16:52:45.005Z",
+        "updated_at": "2023-08-20T18:10:51.303Z",
+        "ftp_user_id": "2af14bc6-75b4-4e19-bfc4-badfe9fb8184"
+      },
+      {
+        "id": "e34c19e7-80de-4b8a-bf15-c27d2f623b9d",
+        "name": "Folder 2",
+        "path": "/var/www/html/folder2",
+        "size": 11601,
+        "last_modified": "2023-08-20T19:49:27.255Z",
+        "created_at": "2023-08-20T20:01:05.557Z",
+        "updated_at": "2023-08-20T17:46:28.482Z",
+        "ftp_user_id": "2af14bc6-75b4-4e19-bfc4-badfe9fb8184"
+      },
+      {
+        "id": "32c19230-2a49-4557-9317-01b3dba65218",
+        "name": "Folder 3",
+        "path": "/data/files/folder3",
+        "size": 65724,
+        "last_modified": "2023-08-20T12:57:05.759Z",
+        "created_at": "2023-08-20T14:40:21.509Z",
+        "updated_at": "2023-08-21T05:08:28.056Z",
+        "ftp_user_id": "8f278cc7-2160-4d9e-86df-8238d1846577"
+      },
+      {
+        "id": "ce77c32f-e3c8-4a87-baaf-b580cc757d7c",
+        "name": "Folder 4",
+        "path": "/shared/documents/folder4",
+        "size": 91305,
+        "last_modified": "2023-08-20T11:36:36.819Z",
+        "created_at": "2023-08-21T08:16:14.637Z",
+        "updated_at": "2023-08-20T14:16:12.538Z",
+        "ftp_user_id": "bbd9c7db-5536-4256-8f35-1f847a0cd3ee"
+      },
+      {
+        "id": "c6b64f84-82b6-4a31-9900-8eb6c9113fb2",
+        "name": "Folder 5",
+        "path": "/ftp/user1/folder5",
+        "size": 71900,
+        "last_modified": "2023-08-20T11:50:48.331Z",
+        "created_at": "2023-08-20T18:02:31.430Z",
+        "updated_at": "2023-08-20T19:06:36.313Z",
+        "ftp_user_id": "1089eb9b-b08d-4bcc-be14-1a1e5511bea1"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "bc768373-9104-4ff4-bfe7-ba7e78678942",
+        "email": "Carlie.Mitchell-Kertzmann76@yahoo.com",
+        "firstName": "Nestor",
+        "lastName": "Dooley",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7620326",
+        "tenantId": null
+      },
+      {
+        "reference": "89e32bc0-c946-4af9-a129-939cb8d6ba74",
+        "email": "Kameron_Graham@yahoo.com",
+        "firstName": "Lauryn",
+        "lastName": "Bahringer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/963.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e42e60f1-c15f-40e6-85d6-7c2b3e710861",
+        "email": "Nora.Cassin91@yahoo.com",
+        "firstName": "D'angelo",
+        "lastName": "Block",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33721149",
+        "tenantId": null
+      },
+      {
+        "reference": "fcf77e6a-1528-4ee3-ae29-89d9a63f540a",
+        "email": "Jeramie.Hills@yahoo.com",
+        "firstName": "Brent",
+        "lastName": "Crona",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/697.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f5819e7e-fe9b-4061-9cf4-7c0351c4f912",
+        "email": "Daniella.Jaskolski@gmail.com",
+        "firstName": "Clementine",
+        "lastName": "Gorczany",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/72529151",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "5dfffd50-732b-462e-9cd6-d26155d1beb2",
+        "name": "Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 59962,
+        "username": "admin",
+        "password": "P@ssw0rd",
+        "created_at": "2023-08-21T01:09:33.311Z",
+        "updated_at": "2023-08-20T12:54:00.630Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "6581e0fd-e06a-4afb-8f43-a041651774c5",
+        "name": "Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 71038,
+        "username": "user1",
+        "password": "Secure123",
+        "created_at": "2023-08-21T08:53:47.767Z",
+        "updated_at": "2023-08-20T15:09:11.181Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "65a4e41a-379f-4467-a409-827c4991864d",
+        "name": "Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 79966,
+        "username": "ftpadmin",
+        "password": "FTP@123",
+        "created_at": "2023-08-21T10:03:50.868Z",
+        "updated_at": "2023-08-21T08:28:08.908Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "cba05813-a1d0-492f-a9cb-a168b1bf1901",
+        "name": "Server 4",
+        "ip_address": "192.168.1.1",
+        "port": 33904,
+        "username": "ftpuser",
+        "password": "Password123",
+        "created_at": "2023-08-20T20:06:11.456Z",
+        "updated_at": "2023-08-20T14:39:09.040Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "be02084b-c86e-4fb2-8939-104d95c4c58a",
+        "name": "Server 5",
+        "ip_address": "172.16.1.1",
+        "port": 31349,
+        "username": "admin123",
+        "password": "Admin@123",
+        "created_at": "2023-08-21T08:18:53.387Z",
+        "updated_at": "2023-08-20T11:47:15.996Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "c48e3056-dfb5-4210-817f-df2dc1bcb54e",
+        "username": "user1",
+        "password": "Password1",
+        "rights": "Read",
+        "folder_path": "public",
+        "active": true,
+        "created_at": "2023-08-21T04:31:49.309Z",
+        "updated_at": "2023-08-20T17:18:07.824Z",
+        "ftp_server_id": "6581e0fd-e06a-4afb-8f43-a041651774c5"
+      },
+      {
+        "id": "aaed2d7d-bef9-4801-97db-4a990e5feb16",
+        "username": "user2",
+        "password": "Password2",
+        "rights": "Write",
+        "folder_path": "documents",
+        "active": false,
+        "created_at": "2023-08-21T09:43:24.553Z",
+        "updated_at": "2023-08-20T16:53:31.486Z",
+        "ftp_server_id": "5dfffd50-732b-462e-9cd6-d26155d1beb2"
+      },
+      {
+        "id": "bf738cb9-504d-4358-8d41-b8801bb34c6b",
+        "username": "user3",
+        "password": "Password3",
+        "rights": "Read/Write",
+        "folder_path": "uploads",
+        "active": true,
+        "created_at": "2023-08-21T00:29:29.724Z",
+        "updated_at": "2023-08-20T13:54:23.174Z",
+        "ftp_server_id": "6581e0fd-e06a-4afb-8f43-a041651774c5"
+      },
+      {
+        "id": "56ce3081-2769-4fe4-bfe3-3a6846566343",
+        "username": "user4",
+        "password": "Password4",
+        "rights": "None",
+        "folder_path": "backup",
+        "active": true,
+        "created_at": "2023-08-20T12:28:10.248Z",
+        "updated_at": "2023-08-20T23:14:35.961Z",
+        "ftp_server_id": "5dfffd50-732b-462e-9cd6-d26155d1beb2"
+      },
+      {
+        "id": "484a6414-4d6f-4181-a354-a663bce052c2",
+        "username": "user5",
+        "password": "Password5",
+        "rights": "Full",
+        "folder_path": "downloads",
+        "active": true,
+        "created_at": "2023-08-20T19:26:00.716Z",
+        "updated_at": "2023-08-20T22:53:59.383Z",
+        "ftp_server_id": "be02084b-c86e-4fb2-8939-104d95c4c58a"
+      }
+    ],
+    "guest": [
+      {
+        "id": "bfd698e8-9867-41ef-803e-eadf755051dc",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "email": "emily.johnson@example.com",
+        "phone": "555-111-2222",
+        "address": "789 Elm Street",
+        "created_at": "2023-08-20T13:06:37.953Z",
+        "updated_at": "2023-08-20T17:15:41.806Z",
+        "ftp_user_id": "c48e3056-dfb5-4210-817f-df2dc1bcb54e"
+      },
+      {
+        "id": "1240b032-8372-4c53-aa53-3c5fb1f8f619",
+        "first_name": "Daniel",
+        "last_name": "Brown",
+        "email": "daniel.brown@example.com",
+        "phone": "555-333-4444",
+        "address": "123 Oak Avenue",
+        "created_at": "2023-08-21T00:17:04.457Z",
+        "updated_at": "2023-08-21T07:52:06.191Z",
+        "ftp_user_id": "bf738cb9-504d-4358-8d41-b8801bb34c6b"
+      },
+      {
+        "id": "8f2fc815-0aec-4537-a52d-ccf446fd68e2",
+        "first_name": "Olivia",
+        "last_name": "Davis",
+        "email": "olivia.davis@example.com",
+        "phone": "555-555-6666",
+        "address": "456 Pine Lane",
+        "created_at": "2023-08-21T04:36:29.372Z",
+        "updated_at": "2023-08-21T06:14:53.196Z",
+        "ftp_user_id": "484a6414-4d6f-4181-a354-a663bce052c2"
+      },
+      {
+        "id": "28ea7b3c-8d6a-4ec2-b073-7c8c0aa712aa",
+        "first_name": "Matthew",
+        "last_name": "Miller",
+        "email": "matthew.miller@example.com",
+        "phone": "555-777-8888",
+        "address": "321 Maple Road",
+        "created_at": "2023-08-20T23:44:09.563Z",
+        "updated_at": "2023-08-20T16:15:29.158Z",
+        "ftp_user_id": "56ce3081-2769-4fe4-bfe3-3a6846566343"
+      },
+      {
+        "id": "42a8e192-0343-47ea-a85e-5305e064a664",
+        "first_name": "Sophia",
+        "last_name": "Anderson",
+        "email": "sophia.anderson@example.com",
+        "phone": "555-999-0000",
+        "address": "654 Cedar Drive",
+        "created_at": "2023-08-21T03:28:30.857Z",
+        "updated_at": "2023-08-21T03:46:03.419Z",
+        "ftp_user_id": "484a6414-4d6f-4181-a354-a663bce052c2"
+      }
+    ],
+    "folder": [
+      {
+        "id": "8db62873-b21c-44bb-88e7-c9a01613d1ac",
+        "name": "Documents",
+        "path": "C:/Users/John/Documents",
+        "size": 67216,
+        "last_modified": "2023-08-21T06:41:41.683Z",
+        "created_at": "2023-08-21T00:40:44.769Z",
+        "updated_at": "2023-08-20T14:42:51.157Z",
+        "ftp_user_id": "bf738cb9-504d-4358-8d41-b8801bb34c6b"
+      },
+      {
+        "id": "8af835af-f643-47e8-87a8-a8db679e316c",
+        "name": "Photos",
+        "path": "C:/Users/John/Pictures",
+        "size": 28973,
+        "last_modified": "2023-08-21T03:11:01.135Z",
+        "created_at": "2023-08-20T12:50:11.337Z",
+        "updated_at": "2023-08-20T21:08:33.632Z",
+        "ftp_user_id": "aaed2d7d-bef9-4801-97db-4a990e5feb16"
+      },
+      {
+        "id": "a6089b9c-ce6c-4f61-836c-59c0ea839ac4",
+        "name": "Videos",
+        "path": "C:/Users/John/Videos",
+        "size": 9817,
+        "last_modified": "2023-08-20T16:48:51.878Z",
+        "created_at": "2023-08-20T20:57:29.577Z",
+        "updated_at": "2023-08-20T17:00:21.984Z",
+        "ftp_user_id": "56ce3081-2769-4fe4-bfe3-3a6846566343"
+      },
+      {
+        "id": "79a5f81b-4221-4ca6-b783-16acf33f17d1",
+        "name": "Music",
+        "path": "C:/Users/John/Music",
+        "size": 15854,
+        "last_modified": "2023-08-21T02:46:12.752Z",
+        "created_at": "2023-08-21T03:30:05.961Z",
+        "updated_at": "2023-08-21T06:41:24.858Z",
+        "ftp_user_id": "484a6414-4d6f-4181-a354-a663bce052c2"
+      },
+      {
+        "id": "16d10462-e7b8-4a05-8e3c-536813f516be",
+        "name": "Backup",
+        "path": "C:/Users/John/Backup",
+        "size": 20386,
+        "last_modified": "2023-08-20T14:52:13.041Z",
+        "created_at": "2023-08-20T11:48:48.591Z",
+        "updated_at": "2023-08-20T15:43:58.871Z",
+        "ftp_user_id": "bf738cb9-504d-4358-8d41-b8801bb34c6b"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "258892b6-adeb-42d1-8f69-ac0fb7fe5365",
+        "email": "Raegan35@hotmail.com",
+        "firstName": "Alva",
+        "lastName": "Lindgren",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/868.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8cda4777-7324-4eeb-ae83-33e5c9e4d21d",
+        "email": "Jovan.Reichert50@hotmail.com",
+        "firstName": "Rosalyn",
+        "lastName": "Franey",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/526.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b5047780-6907-4a7e-bdc2-d75df7ddeaa0",
+        "email": "Viva3@hotmail.com",
+        "firstName": "Brycen",
+        "lastName": "Gorczany",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1016.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b2f1ee78-3b25-4aa7-a276-4d93a959e55f",
+        "email": "Hailie_OKon@yahoo.com",
+        "firstName": "Madilyn",
+        "lastName": "Gislason",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/40951921",
+        "tenantId": null
+      },
+      {
+        "reference": "3e53dbdd-a95a-487c-86e1-f3baaaacbe2c",
+        "email": "Adela22@gmail.com",
+        "firstName": "Nat",
+        "lastName": "Grady",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1129.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "eb21a69b-f31c-442f-892d-82ed67342a67",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 27092,
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-20T20:15:08.355Z",
+        "updated_at": "2023-08-20T17:40:58.802Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "50d097e0-153a-4f5d-8ac8-40c60d9b9599",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 85802,
+        "username": "user1",
+        "password": "securepassword",
+        "created_at": "2023-08-21T08:05:37.515Z",
+        "updated_at": "2023-08-20T23:38:28.873Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "bbbff6eb-df28-413e-aa67-c62ecf75a556",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 8965,
+        "username": "ftpuser",
+        "password": "ftp123",
+        "created_at": "2023-08-21T05:56:12.006Z",
+        "updated_at": "2023-08-21T06:40:05.615Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "e1db34c6-aebb-4bb9-9463-640328144d58",
+        "name": "FTP Server 4",
+        "ip_address": "192.0.2.1",
+        "port": 59142,
+        "username": "ftpadmin",
+        "password": "password123",
+        "created_at": "2023-08-21T08:39:27.959Z",
+        "updated_at": "2023-08-20T19:45:25.482Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "b650b7cb-fd7c-4c39-9b8a-356258eae8ce",
+        "name": "FTP Server 5",
+        "ip_address": "198.51.100.1",
+        "port": 67876,
+        "username": "ftpadmin1",
+        "password": "pass1234",
+        "created_at": "2023-08-21T00:54:32.248Z",
+        "updated_at": "2023-08-20T11:32:20.676Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "9182ca05-b77c-45e9-92be-81ede0c38a7e",
+        "username": "user1",
+        "password": "password1",
+        "rights": "read",
+        "folder_path": "/home/user1",
+        "active": true,
+        "created_at": "2023-08-21T07:55:06.881Z",
+        "updated_at": "2023-08-21T10:06:27.822Z",
+        "ftp_server_id": "50d097e0-153a-4f5d-8ac8-40c60d9b9599"
+      },
+      {
+        "id": "f4d21107-8525-4790-8566-1c514aca8976",
+        "username": "user2",
+        "password": "password2",
+        "rights": "write",
+        "folder_path": "/var/www/html",
+        "active": true,
+        "created_at": "2023-08-20T20:37:52.810Z",
+        "updated_at": "2023-08-20T18:13:26.743Z",
+        "ftp_server_id": "bbbff6eb-df28-413e-aa67-c62ecf75a556"
+      },
+      {
+        "id": "3f2e7477-df63-443f-b016-25e4ccd4eb85",
+        "username": "user3",
+        "password": "password3",
+        "rights": "read/write",
+        "folder_path": "/data/uploads",
+        "active": true,
+        "created_at": "2023-08-20T12:55:58.385Z",
+        "updated_at": "2023-08-21T00:48:50.067Z",
+        "ftp_server_id": "bbbff6eb-df28-413e-aa67-c62ecf75a556"
+      },
+      {
+        "id": "6c8a9328-190b-4881-b677-656d42297954",
+        "username": "user4",
+        "password": "password4",
+        "rights": "admin",
+        "folder_path": "/public/files",
+        "active": true,
+        "created_at": "2023-08-21T06:11:55.082Z",
+        "updated_at": "2023-08-21T00:26:35.885Z",
+        "ftp_server_id": "50d097e0-153a-4f5d-8ac8-40c60d9b9599"
+      },
+      {
+        "id": "445b8e2d-e265-4b38-987a-a31ed4c26361",
+        "username": "user5",
+        "password": "password5",
+        "rights": "limited",
+        "folder_path": "/documents",
+        "active": true,
+        "created_at": "2023-08-21T03:06:49.597Z",
+        "updated_at": "2023-08-20T13:57:35.880Z",
+        "ftp_server_id": "50d097e0-153a-4f5d-8ac8-40c60d9b9599"
+      }
+    ],
+    "guest": [
+      {
+        "id": "67e684e7-a730-40d2-b0ed-3b7df0a4f8d6",
+        "first_name": "Alice",
+        "last_name": "Anderson",
+        "email": "alice.anderson@example.com",
+        "phone": "111-222-3333",
+        "address": "123 Main Street",
+        "created_at": "2023-08-21T09:21:52.719Z",
+        "updated_at": "2023-08-20T11:10:46.749Z",
+        "ftp_user_id": "3f2e7477-df63-443f-b016-25e4ccd4eb85"
+      },
+      {
+        "id": "c50f6dd0-81de-40b5-9104-f04e81c54982",
+        "first_name": "Bob",
+        "last_name": "Brown",
+        "email": "bob.brown@example.com",
+        "phone": "444-555-6666",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-08-20T22:34:51.517Z",
+        "updated_at": "2023-08-21T05:19:58.536Z",
+        "ftp_user_id": "3f2e7477-df63-443f-b016-25e4ccd4eb85"
+      },
+      {
+        "id": "402ae778-586e-42b4-9e06-21ba34c88a58",
+        "first_name": "Charlie",
+        "last_name": "Clark",
+        "email": "charlie.clark@example.com",
+        "phone": "777-888-9999",
+        "address": "789 Oak Drive",
+        "created_at": "2023-08-21T09:03:47.575Z",
+        "updated_at": "2023-08-20T20:10:00.938Z",
+        "ftp_user_id": "6c8a9328-190b-4881-b677-656d42297954"
+      },
+      {
+        "id": "cadf094b-6cf6-4af4-842a-771b20474fae",
+        "first_name": "David",
+        "last_name": "Davis",
+        "email": "david.davis@example.com",
+        "phone": "123-456-7890",
+        "address": "321 Maple Lane",
+        "created_at": "2023-08-21T06:58:39.235Z",
+        "updated_at": "2023-08-20T18:24:17.465Z",
+        "ftp_user_id": "445b8e2d-e265-4b38-987a-a31ed4c26361"
+      },
+      {
+        "id": "abea4b3a-56f0-4b38-89f6-cefc5ecee271",
+        "first_name": "Eve",
+        "last_name": "Evans",
+        "email": "eve.evans@example.com",
+        "phone": "987-654-3210",
+        "address": "654 Pine Road",
+        "created_at": "2023-08-21T00:13:59.663Z",
+        "updated_at": "2023-08-20T20:08:26.576Z",
+        "ftp_user_id": "6c8a9328-190b-4881-b677-656d42297954"
+      }
+    ],
+    "folder": [
+      {
+        "id": "6f27e267-0979-43f4-94f1-654de4aa7823",
+        "name": "Folder 1",
+        "path": "/home/user1/folder1",
+        "size": 11196,
+        "last_modified": "2023-08-20T10:57:17.320Z",
+        "created_at": "2023-08-20T23:22:24.235Z",
+        "updated_at": "2023-08-21T09:50:40.289Z",
+        "ftp_user_id": "6c8a9328-190b-4881-b677-656d42297954"
+      },
+      {
+        "id": "48d7bd3c-2dc7-4701-8cfa-e1ebe2368c69",
+        "name": "Folder 2",
+        "path": "/var/www/html/folder2",
+        "size": 36899,
+        "last_modified": "2023-08-21T07:48:18.601Z",
+        "created_at": "2023-08-21T07:46:48.546Z",
+        "updated_at": "2023-08-20T16:38:46.980Z",
+        "ftp_user_id": "445b8e2d-e265-4b38-987a-a31ed4c26361"
+      },
+      {
+        "id": "66a73e9c-7f5f-46f5-9a42-bef152f695fb",
+        "name": "Folder 3",
+        "path": "/data/uploads/folder3",
+        "size": 52316,
+        "last_modified": "2023-08-20T23:11:14.799Z",
+        "created_at": "2023-08-20T23:43:28.894Z",
+        "updated_at": "2023-08-20T16:47:00.368Z",
+        "ftp_user_id": "f4d21107-8525-4790-8566-1c514aca8976"
+      },
+      {
+        "id": "e0acbb82-cc8e-4875-b9bd-f09ed439686f",
+        "name": "Folder 4",
+        "path": "/public/files/folder4",
+        "size": 14697,
+        "last_modified": "2023-08-21T09:38:56.650Z",
+        "created_at": "2023-08-21T04:06:29.559Z",
+        "updated_at": "2023-08-21T05:07:10.634Z",
+        "ftp_user_id": "9182ca05-b77c-45e9-92be-81ede0c38a7e"
+      },
+      {
+        "id": "1ef8cd96-cda8-4634-af3e-25fc1f51a6a2",
+        "name": "Folder 5",
+        "path": "/documents/folder5",
+        "size": 83664,
+        "last_modified": "2023-08-21T09:35:06.451Z",
+        "created_at": "2023-08-20T19:51:15.282Z",
+        "updated_at": "2023-08-21T07:25:56.819Z",
+        "ftp_user_id": "6c8a9328-190b-4881-b677-656d42297954"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1d4bb902-0201-447e-9499-567658c823d7",
+        "email": "Elian_Walter-Frami@yahoo.com",
+        "firstName": "Tatum",
+        "lastName": "Crooks-Dibbert",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/292.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e620ed52-4d12-4f47-96a2-0dd7fd0d7ac9",
+        "email": "Sigmund.Schneider64@hotmail.com",
+        "firstName": "Jacklyn",
+        "lastName": "Boyle",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/45223570",
+        "tenantId": null
+      },
+      {
+        "reference": "77a1a5ae-4156-4e92-8589-d0016a4fe275",
+        "email": "Melissa.McKenzie66@yahoo.com",
+        "firstName": "Amara",
+        "lastName": "Maggio",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/43514381",
+        "tenantId": null
+      },
+      {
+        "reference": "79b5f208-cd5d-4f24-aa2c-5c80daefbc32",
+        "email": "Mitchell.Raynor3@yahoo.com",
+        "firstName": "Jayme",
+        "lastName": "Fritsch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/27116242",
+        "tenantId": null
+      },
+      {
+        "reference": "91491d2c-9f62-4ada-8ff2-59b1a1ccd83c",
+        "email": "Sophia12@gmail.com",
+        "firstName": "Mafalda",
+        "lastName": "Hahn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46029006",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "0109be47-ba9a-4720-a1b3-94107b4f4205",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 88275,
+        "username": "admin",
+        "password": "p@ssw0rd1",
+        "created_at": "2023-08-20T14:58:45.160Z",
+        "updated_at": "2023-08-21T05:13:45.864Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "2c9ebb62-9c4f-4eed-9e28-8384cf339757",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 6192,
+        "username": "user1",
+        "password": "password123",
+        "created_at": "2023-08-20T14:27:12.403Z",
+        "updated_at": "2023-08-20T20:32:25.397Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "c9afd5ca-6f92-43c3-92ea-b9ec5eaae6c8",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 66286,
+        "username": "ftpadmin",
+        "password": "securepass",
+        "created_at": "2023-08-21T09:52:43.711Z",
+        "updated_at": "2023-08-21T02:19:38.388Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "fa74741a-405e-4ce8-a357-47a9d3b32bb2",
+        "name": "FTP Server 4",
+        "ip_address": "192.168.1.1",
+        "port": 11569,
+        "username": "ftpuser",
+        "password": "ftp123",
+        "created_at": "2023-08-21T02:13:50.528Z",
+        "updated_at": "2023-08-20T10:39:38.819Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "0960389a-b83a-4e6a-8062-31a78fe05cc5",
+        "name": "FTP Server 5",
+        "ip_address": "172.16.1.1",
+        "port": 82419,
+        "username": "administrator",
+        "password": "adminpass",
+        "created_at": "2023-08-20T14:03:51.562Z",
+        "updated_at": "2023-08-20T21:24:56.880Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "b106a733-ea2f-4bfc-b096-770c5f047e74",
+        "username": "user1",
+        "password": "password1",
+        "rights": "read",
+        "folder_path": "/home/user1",
+        "active": false,
+        "created_at": "2023-08-20T14:42:57.025Z",
+        "updated_at": "2023-08-20T11:15:42.783Z",
+        "ftp_server_id": "2c9ebb62-9c4f-4eed-9e28-8384cf339757"
+      },
+      {
+        "id": "0ea1a64b-a5fe-45e3-a12b-f38ca96fe1b2",
+        "username": "user2",
+        "password": "password2",
+        "rights": "write",
+        "folder_path": "/var/www/html",
+        "active": false,
+        "created_at": "2023-08-20T11:47:37.276Z",
+        "updated_at": "2023-08-20T17:24:21.042Z",
+        "ftp_server_id": "0109be47-ba9a-4720-a1b3-94107b4f4205"
+      },
+      {
+        "id": "49583b67-a914-4588-9ec7-1b29140fdc14",
+        "username": "user3",
+        "password": "password3",
+        "rights": "read/write",
+        "folder_path": "/data/uploads",
+        "active": false,
+        "created_at": "2023-08-21T01:39:24.942Z",
+        "updated_at": "2023-08-21T08:13:23.284Z",
+        "ftp_server_id": "fa74741a-405e-4ce8-a357-47a9d3b32bb2"
+      },
+      {
+        "id": "a9b420c0-4f4a-496f-aa14-1821c6142030",
+        "username": "user4",
+        "password": "password4",
+        "rights": "admin",
+        "folder_path": "/documents",
+        "active": true,
+        "created_at": "2023-08-20T18:48:56.448Z",
+        "updated_at": "2023-08-20T13:35:30.525Z",
+        "ftp_server_id": "fa74741a-405e-4ce8-a357-47a9d3b32bb2"
+      },
+      {
+        "id": "19fd75ee-452a-4afe-815b-1f287a42c253",
+        "username": "user5",
+        "password": "password5",
+        "rights": "limited",
+        "folder_path": "/backup",
+        "active": false,
+        "created_at": "2023-08-20T17:48:06.213Z",
+        "updated_at": "2023-08-21T03:39:47.546Z",
+        "ftp_server_id": "fa74741a-405e-4ce8-a357-47a9d3b32bb2"
+      }
+    ],
+    "guest": [
+      {
+        "id": "df291d38-9468-4d4f-a719-3e32fa4020c5",
+        "first_name": "Alex",
+        "last_name": "Johnson",
+        "email": "alex.johnson@example.com",
+        "phone": "111-222-3333",
+        "address": "789 Elm St, Anytown, USA",
+        "created_at": "2023-08-20T16:41:46.187Z",
+        "updated_at": "2023-08-21T07:00:45.618Z",
+        "ftp_user_id": "0ea1a64b-a5fe-45e3-a12b-f38ca96fe1b2"
+      },
+      {
+        "id": "e4689b34-0352-4f8f-ab6d-d0bd1dc57337",
+        "first_name": "Emily",
+        "last_name": "Brown",
+        "email": "emily.brown@example.com",
+        "phone": "444-555-6666",
+        "address": "456 Oak St, Otherville, USA",
+        "created_at": "2023-08-20T20:30:40.349Z",
+        "updated_at": "2023-08-21T08:11:25.799Z",
+        "ftp_user_id": "19fd75ee-452a-4afe-815b-1f287a42c253"
+      },
+      {
+        "id": "d634ab34-5f91-4794-98bc-eec917f727ad",
+        "first_name": "Daniel",
+        "last_name": "Miller",
+        "email": "daniel.miller@example.com",
+        "phone": "777-888-9999",
+        "address": "123 Pine St, Anothercity, USA",
+        "created_at": "2023-08-21T07:24:39.556Z",
+        "updated_at": "2023-08-20T17:36:15.873Z",
+        "ftp_user_id": "a9b420c0-4f4a-496f-aa14-1821c6142030"
+      },
+      {
+        "id": "3ee16190-c3d9-47cc-a6ec-82a4614f4264",
+        "first_name": "Olivia",
+        "last_name": "Davis",
+        "email": "olivia.davis@example.com",
+        "phone": "123-456-7890",
+        "address": "987 Maple St, Somewhere, USA",
+        "created_at": "2023-08-21T02:15:07.003Z",
+        "updated_at": "2023-08-20T18:46:54.613Z",
+        "ftp_user_id": "49583b67-a914-4588-9ec7-1b29140fdc14"
+      },
+      {
+        "id": "4f012f6f-3554-48d5-bd48-fe262a6e6940",
+        "first_name": "Sophia",
+        "last_name": "Wilson",
+        "email": "sophia.wilson@example.com",
+        "phone": "987-654-3210",
+        "address": "654 Main St, Anywhere, USA",
+        "created_at": "2023-08-21T06:45:03.030Z",
+        "updated_at": "2023-08-20T19:21:00.301Z",
+        "ftp_user_id": "19fd75ee-452a-4afe-815b-1f287a42c253"
+      }
+    ],
+    "folder": [
+      {
+        "id": "804ea9a5-e200-40d7-9961-b826d165896a",
+        "name": "Documents",
+        "path": "/home/user1/documents",
+        "size": 68419,
+        "last_modified": "2023-08-21T08:28:44.065Z",
+        "created_at": "2023-08-21T08:56:11.992Z",
+        "updated_at": "2023-08-21T06:01:49.748Z",
+        "ftp_user_id": "b106a733-ea2f-4bfc-b096-770c5f047e74"
+      },
+      {
+        "id": "68c1a9dd-d214-48d0-a6a6-0572eb81ce29",
+        "name": "Photos",
+        "path": "/home/user1/photos",
+        "size": 45554,
+        "last_modified": "2023-08-20T16:38:48.348Z",
+        "created_at": "2023-08-21T07:32:22.692Z",
+        "updated_at": "2023-08-21T08:13:45.401Z",
+        "ftp_user_id": "19fd75ee-452a-4afe-815b-1f287a42c253"
+      },
+      {
+        "id": "841e5373-a615-4d6e-a2d0-11e9e14ceb5e",
+        "name": "Music",
+        "path": "/home/user1/music",
+        "size": 5797,
+        "last_modified": "2023-08-20T18:36:56.646Z",
+        "created_at": "2023-08-20T12:55:58.747Z",
+        "updated_at": "2023-08-21T02:02:37.872Z",
+        "ftp_user_id": "b106a733-ea2f-4bfc-b096-770c5f047e74"
+      },
+      {
+        "id": "21e9d86e-ac53-41dd-a7de-c33a8579b318",
+        "name": "Videos",
+        "path": "/home/user1/videos",
+        "size": 46784,
+        "last_modified": "2023-08-21T08:03:26.336Z",
+        "created_at": "2023-08-20T13:41:49.311Z",
+        "updated_at": "2023-08-20T21:11:18.908Z",
+        "ftp_user_id": "a9b420c0-4f4a-496f-aa14-1821c6142030"
+      },
+      {
+        "id": "eefbe491-29d9-411c-aa7c-63207518cb14",
+        "name": "Backup",
+        "path": "/home/user1/backup",
+        "size": 60178,
+        "last_modified": "2023-08-20T18:13:42.064Z",
+        "created_at": "2023-08-20T21:07:35.325Z",
+        "updated_at": "2023-08-21T07:08:53.866Z",
+        "ftp_user_id": "a9b420c0-4f4a-496f-aa14-1821c6142030"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "e049b820-5757-468c-ab0f-5e36b77bed33",
+        "email": "Johan_Shields-Borer87@hotmail.com",
+        "firstName": "Noah",
+        "lastName": "Runolfsson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46393458",
+        "tenantId": null
+      },
+      {
+        "reference": "86c78eb3-620d-4caf-84bf-d2610c961b34",
+        "email": "Jessy.Hodkiewicz38@yahoo.com",
+        "firstName": "Gregg",
+        "lastName": "Harvey",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/66391447",
+        "tenantId": null
+      },
+      {
+        "reference": "2ef03d65-43a3-4522-846c-34f31021cc36",
+        "email": "Hildegard15@hotmail.com",
+        "firstName": "Luisa",
+        "lastName": "Kirlin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/389.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e0c7e240-a546-4f8a-8e11-d29cd4e224a0",
+        "email": "Maddison53@hotmail.com",
+        "firstName": "Joanie",
+        "lastName": "Ebert",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/604.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9bf1a9e7-7d4d-4bc4-922d-cd56c87465d3",
+        "email": "Myrna.Spencer@gmail.com",
+        "firstName": "Melisa",
+        "lastName": "Kshlerin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/587.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "ftp_server": [
+      {
+        "id": "f4aa3aea-9a25-44c3-951c-2e28256d5e19",
+        "name": "FTP Server 1",
+        "ip_address": "192.168.0.1",
+        "port": 4486,
+        "username": "admin",
+        "password": "P@ssw0rd",
+        "created_at": "2023-08-20T18:10:07.490Z",
+        "updated_at": "2023-08-21T07:45:36.612Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "d679b94e-78c3-42a6-9585-abee03120ea6",
+        "name": "FTP Server 2",
+        "ip_address": "10.0.0.1",
+        "port": 17807,
+        "username": "user1",
+        "password": "SecurePassword",
+        "created_at": "2023-08-20T12:01:43.607Z",
+        "updated_at": "2023-08-20T21:46:54.671Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "0251c9af-3487-4501-b829-a1887ecdc92d",
+        "name": "FTP Server 3",
+        "ip_address": "172.16.0.1",
+        "port": 55210,
+        "username": "ftpadmin",
+        "password": "FTP123",
+        "created_at": "2023-08-20T16:44:24.195Z",
+        "updated_at": "2023-08-20T15:11:58.599Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "b1bfd648-43f9-4a21-8c5d-20edcde475eb",
+        "name": "FTP Server 4",
+        "ip_address": "192.168.1.1",
+        "port": 25780,
+        "username": "ftpuser",
+        "password": "Password123",
+        "created_at": "2023-08-20T19:03:53.778Z",
+        "updated_at": "2023-08-20T12:15:42.929Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "6ba869b6-90c2-4997-bb96-a355a1678fa1",
+        "name": "FTP Server 5",
+        "ip_address": "10.0.1.1",
+        "port": 22450,
+        "username": "ftpadmin1",
+        "password": "12345678",
+        "created_at": "2023-08-21T05:11:04.922Z",
+        "updated_at": "2023-08-21T02:58:13.489Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "ftp_user": [
+      {
+        "id": "45246415-7fbf-4716-9dce-f4df8800464e",
+        "username": "user1",
+        "password": "P@ssw0rd",
+        "rights": "read",
+        "folder_path": "/home/user1",
+        "active": false,
+        "created_at": "2023-08-20T17:21:18.870Z",
+        "updated_at": "2023-08-21T05:06:48.642Z",
+        "ftp_server_id": "b1bfd648-43f9-4a21-8c5d-20edcde475eb"
+      },
+      {
+        "id": "003c9d64-3aab-48fc-bcba-407861165906",
+        "username": "user2",
+        "password": "SecurePassword",
+        "rights": "write",
+        "folder_path": "/var/www/html",
+        "active": true,
+        "created_at": "2023-08-21T08:28:20.936Z",
+        "updated_at": "2023-08-21T06:34:30.870Z",
+        "ftp_server_id": "6ba869b6-90c2-4997-bb96-a355a1678fa1"
+      },
+      {
+        "id": "54b2a5e3-783b-4c25-bf32-0d022919477a",
+        "username": "user3",
+        "password": "FTP123",
+        "rights": "read/write",
+        "folder_path": "/data/uploads",
+        "active": true,
+        "created_at": "2023-08-20T21:09:31.632Z",
+        "updated_at": "2023-08-20T19:24:35.770Z",
+        "ftp_server_id": "6ba869b6-90c2-4997-bb96-a355a1678fa1"
+      },
+      {
+        "id": "571d9aba-0dce-46ff-a556-ce59e4116911",
+        "username": "user4",
+        "password": "Password123",
+        "rights": "admin",
+        "folder_path": "/public/files",
+        "active": true,
+        "created_at": "2023-08-20T21:36:37.280Z",
+        "updated_at": "2023-08-21T06:12:30.280Z",
+        "ftp_server_id": "0251c9af-3487-4501-b829-a1887ecdc92d"
+      },
+      {
+        "id": "ccd0e73b-06a2-4846-be48-ec053ddf2456",
+        "username": "user5",
+        "password": "12345678",
+        "rights": "limited",
+        "folder_path": "/ftp/user1",
+        "active": false,
+        "created_at": "2023-08-20T14:02:24.342Z",
+        "updated_at": "2023-08-21T03:34:55.099Z",
+        "ftp_server_id": "f4aa3aea-9a25-44c3-951c-2e28256d5e19"
+      }
+    ],
+    "guest": [
+      {
+        "id": "08c47804-a9d7-4bd8-aebe-143be9b0b88e",
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890",
+        "address": "123 Main Street",
+        "created_at": "2023-08-20T12:10:31.916Z",
+        "updated_at": "2023-08-20T21:05:00.879Z",
+        "ftp_user_id": "54b2a5e3-783b-4c25-bf32-0d022919477a"
+      },
+      {
+        "id": "fa6d5e48-6dd9-4eef-ade4-40fb05edd566",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "phone": "987-654-3210",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-08-20T14:42:15.563Z",
+        "updated_at": "2023-08-20T18:04:38.476Z",
+        "ftp_user_id": "54b2a5e3-783b-4c25-bf32-0d022919477a"
+      },
+      {
+        "id": "1935f9c4-10f3-4c1f-9149-1b269b774a6c",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "email": "michael.brown@example.com",
+        "phone": "555-123-4567",
+        "address": "789 Oak Lane",
+        "created_at": "2023-08-21T06:48:26.749Z",
+        "updated_at": "2023-08-20T18:44:19.364Z",
+        "ftp_user_id": "003c9d64-3aab-48fc-bcba-407861165906"
+      },
+      {
+        "id": "7ecb061d-a5c0-4a97-bdc4-e4177e481a71",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "email": "sarah.jones@example.com",
+        "phone": "888-999-0000",
+        "address": "321 Maple Road",
+        "created_at": "2023-08-21T07:12:18.290Z",
+        "updated_at": "2023-08-21T01:24:46.642Z",
+        "ftp_user_id": "45246415-7fbf-4716-9dce-f4df8800464e"
+      },
+      {
+        "id": "b49c0314-95d7-4a61-93da-74ddedbe0f73",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "email": "robert.wilson@example.com",
+        "phone": "111-222-3333",
+        "address": "654 Pine Court",
+        "created_at": "2023-08-20T16:05:55.972Z",
+        "updated_at": "2023-08-20T22:54:55.070Z",
+        "ftp_user_id": "571d9aba-0dce-46ff-a556-ce59e4116911"
+      }
+    ],
+    "folder": [
+      {
+        "id": "97340592-ba59-4244-aebf-6715c0ed13a7",
+        "name": "Folder 1",
+        "path": "/home/user1/folder1",
+        "size": 56732,
+        "last_modified": "2023-08-20T17:12:45.395Z",
+        "created_at": "2023-08-21T02:56:08.142Z",
+        "updated_at": "2023-08-20T18:50:14.186Z",
+        "ftp_user_id": "571d9aba-0dce-46ff-a556-ce59e4116911"
+      },
+      {
+        "id": "27ce78db-c07e-456a-8a38-b0bc6e63e68c",
+        "name": "Folder 2",
+        "path": "/var/www/html/folder2",
+        "size": 42108,
+        "last_modified": "2023-08-21T07:09:47.663Z",
+        "created_at": "2023-08-20T21:10:38.242Z",
+        "updated_at": "2023-08-20T22:58:33.029Z",
+        "ftp_user_id": "ccd0e73b-06a2-4846-be48-ec053ddf2456"
+      },
+      {
+        "id": "94ab4a04-efdb-49eb-9f29-83779b0a4f91",
+        "name": "Folder 3",
+        "path": "/data/uploads/folder3",
+        "size": 77466,
+        "last_modified": "2023-08-20T16:12:22.281Z",
+        "created_at": "2023-08-21T03:23:07.761Z",
+        "updated_at": "2023-08-20T23:42:28.975Z",
+        "ftp_user_id": "54b2a5e3-783b-4c25-bf32-0d022919477a"
+      },
+      {
+        "id": "728b10b5-cd4e-4c1d-b924-2abe159ef7d0",
+        "name": "Folder 4",
+        "path": "/public/files/folder4",
+        "size": 28096,
+        "last_modified": "2023-08-20T23:37:55.880Z",
+        "created_at": "2023-08-21T04:44:58.194Z",
+        "updated_at": "2023-08-21T02:34:34.024Z",
+        "ftp_user_id": "571d9aba-0dce-46ff-a556-ce59e4116911"
+      },
+      {
+        "id": "9996d13f-f3aa-453e-ae09-cc5f9ffe3b11",
+        "name": "Folder 5",
+        "path": "/ftp/user1/folder5",
+        "size": 28363,
+        "last_modified": "2023-08-20T12:33:00.364Z",
+        "created_at": "2023-08-20T16:25:26.063Z",
+        "updated_at": "2023-08-20T11:00:14.648Z",
+        "ftp_user_id": "571d9aba-0dce-46ff-a556-ce59e4116911"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "99637634-9031-4404-b7ec-909dc3e9dd91",
+        "email": "Ana.Stiedemann@gmail.com",
+        "firstName": "Joanny",
+        "lastName": "Ankunding",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/60807854",
+        "tenantId": null
+      },
+      {
+        "reference": "c60dea8d-081f-4260-bb31-69be37e0ffc9",
+        "email": "Tiana.Hamill3@gmail.com",
+        "firstName": "Stuart",
+        "lastName": "Hammes",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1106.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "733c7f57-aa0e-4cdd-aaf0-8cc3fb80ed1d",
+        "email": "Addie78@gmail.com",
+        "firstName": "Sedrick",
+        "lastName": "Zulauf",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/97.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "85758a6c-24b0-41d2-b22e-46d2d7b28793",
+        "email": "Nelda_Effertz90@gmail.com",
+        "firstName": "Maxime",
+        "lastName": "Von",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/49.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "eb51689e-e3d5-48e9-a030-8275730a8acd",
+        "email": "Geovanni14@yahoo.com",
+        "firstName": "Kellie",
+        "lastName": "Altenwerth",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/297.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]
